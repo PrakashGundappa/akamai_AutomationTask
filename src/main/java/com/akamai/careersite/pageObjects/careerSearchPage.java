@@ -17,10 +17,7 @@ public class careerSearchPage extends base {
 	By searchResultList = By.xpath("//div[@class='row no-gutters']//div[@aria-labelledby='header-titler']/a");
 	By offerBanner = By.xpath("//*[@controlid='location']//ancestor::div//div[contains(@class,'text-muted')]/span");
 
-	public WebElement findYourCareerInput() {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(findYourCareerInput));
-		return driver.findElement(findYourCareerInput);
-	}
+	
 
 	public WebElement searchButton() {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(searchButton));
